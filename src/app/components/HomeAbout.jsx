@@ -1,6 +1,9 @@
+'use client'
+
 import React from 'react'
 import MainHeading from './MainHeading'
 import Paragraph from './Paragraph'
+import { motion } from "motion/react"
 
 const HomeAbout = () => {
   return (
@@ -22,9 +25,12 @@ const HomeAbout = () => {
 
         </div>
         
-        <div className='h-80 w-full' 
-        style={{backgroundImage: "url('/road-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center top'}}>
-        </div>
+        <motion.div
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        className='h-80 w-full' 
+        style={{backgroundImage: "url('/road-background.jpg')", backgroundSize: 'cover', backgroundPosition: 'center top'}}
+        />
     </div>
   )
 }

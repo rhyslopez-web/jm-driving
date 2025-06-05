@@ -22,7 +22,7 @@ const HomeReviews = () => {
 
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
                 {reviews.map((review, index) => (
-                    <ReviewCard key={index} review={review.review} name={review.name} status={review.status}/>
+                    <ReviewCard key={index} review={review.review} name={review.name} status={review.status} image={review.image}/>
                 ))}
             </div>
         </div>

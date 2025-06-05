@@ -4,7 +4,7 @@ import MainButton from './MainButton'
 
 const Navbar = () => {
   return (
-    <nav className='w-full border-b border-blue-primary bg-white'>
+    <nav className='w-full border-b border-blue-primary bg-white fixed top-0 z-10'>
         <div className='py-5 flex justify-between px-10'>
             {/* Logo */}
             <a className='w-1/4'>
@@ -19,13 +19,13 @@ const Navbar = () => {
             </a>
 
             <ul className='hidden lg:flex gap-5 fw-medium'>
-                <li className='flex items-center text-red-primary'>
+                <li className='flex items-center text-blue-primary'>
                     <Link href="#" className=''>Home</Link>
                 </li>
-                <li className='flex items-center text-red-primary'>
+                <li className='flex items-center text-blue-primary'>
                     <Link href="#">Pricing</Link>
                 </li>
-                <li className='flex items-center text-red-primary'>
+                <li className='flex items-center text-blue-primary'>
                     <Link href="#">About</Link>
                 </li>
                 <li>
