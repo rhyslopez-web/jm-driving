@@ -15,7 +15,7 @@ const HomeAbout = () => {
 
             <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>
                 <Paragraph>
-                    John Montero has been guiding learners through the streets of Burnaby, BC, for over 3 years — and he’s just getting started. With a growing list of successful students and a calm, supportive teaching style, John is the go-to instructor for first-time drivers looking to build real-world driving skills.
+                    John Montero has been guiding learners through the streets of Burnaby, BC, for over 3 years and he’s just getting started. With a growing list of successful students and a calm, supportive teaching style, John is the go-to instructor for first-time drivers looking to build real-world driving skills.
                 </Paragraph>
 
                 <Paragraph>

@@ -9,7 +9,7 @@ import Hyperspeed from './Hyperspeed'
 const HeroSection = () => {
   return (
     <div className='relative flex justify-center'>
-      <div className="h-screen grid grid-cols-1 lg:grid-cols-1 border-b border-blue-primary container px-5 lg:px-0">
+      <div className="h-screen grid grid-cols-1 lg:grid-cols-1 container px-5 lg:px-50">
         {/* Hero Content */}
         <div className="h-full flex flex-col justify-center items-center">
           <div className="flex flex-col gap-5">

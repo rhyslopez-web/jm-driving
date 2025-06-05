@@ -4,7 +4,7 @@ import MainButton from './MainButton'
 
 const Navbar = () => {
   return (
-    <nav className='w-full border-b border-blue-primary bg-white fixed top-0 z-10'>
+    <nav className='w-full bg-white fixed top-0 z-10'>
         <div className='py-5 flex justify-between px-10'>
             {/* Logo */}
             <a className='w-1/4'>
