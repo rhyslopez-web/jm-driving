@@ -6,16 +6,12 @@ import HomeServicesRow from '../components/HomeServicesRow'
 import HomeReviews from '../components/HomeReviews'
 import HomeGallery from '../components/HomeGallery'
 import AnimatedGridBG from '../components/AnimatedGridBG'
+import MainHeading from '../components/MainHeading'
 
 const page = () => {
   return (
     <>
-      <HeroSection/>
-      <HomeAbout/>
-      <LogoSlider/>
-      <HomeServicesRow/>
-      <HomeReviews/>
-      <HomeGallery/>
+      <MainHeading>This is your home</MainHeading>
     </>
   )
 }

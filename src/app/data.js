@@ -2,17 +2,27 @@ const services = [
     {
         title: "Class 7",
         description: "Preparing for your Class 7 road test? These lessons focus on real world scenarios, defensive driving, and mastering the skills needed to pass and drive independently.",
-        image: 'class7.jpg'
+        image: 'class7.jpg',
+        long_description: 'Learn the fundamentals of safe driving and build confidence as you work toward your Class 7 Novice (N) license. This option is perfect for new drivers who are just starting out.',
+        price: '$73.50/hr (GST included)',
+        perks: ['5 minutes of planning', '50 minutes of in car instruction', '5 minutes of summary']
     },
     {
         title: "Class 5",
         description: "Ready for full licensing? Class 5 lessons are ideal for experienced drivers looking to refine their skills and meet all requirements for a full BC driver’s license.",
-        image: "class5.jpg"
+        image: "class5.jpg",
+        long_description: 'Designed for drivers with their Class 7 (N) license, these lessons focus on advanced skills and test preparation to help you upgrade to your full Class 5 license.',
+        price: '$73.50/hr (GST included)',
+        perks: ['5 minutes of planning', '50 minutes of in car instruction', '5 minutes of summary']
     },
     {
         title: "Car Rental",
         description: "Need a reliable car for your road test? Rent a clean, test ready vehicle with insurance included perfect for stress free exam day.",
-        image: "carrental.jpg"
+        image: "carrental.jpg",
+        long_description: 'Don’t have a car for your test? Rent one of ours! Choose between just the vehicle or a vehicle plus a warm-up session to get comfortable before the exam.',
+        price: '',
+        perks: []
+
     },
 ]
 
@@ -59,6 +69,8 @@ export const gallery = [
         image:"gallery 6.jpg"
     },
 ]
+
+
 
 
 

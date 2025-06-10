@@ -8,8 +8,8 @@ import Hyperspeed from './Hyperspeed'
 
 const HeroSection = () => {
   return (
-    <div className='relative flex justify-center'>
-      <div className="h-screen grid grid-cols-1 lg:grid-cols-1 container px-5 lg:px-50">
+    <div className='relative flex justify-center items-center'>
+      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-1 container px-5 lg:px-50 py-10">
         {/* Hero Content */}
         <div className="h-full flex flex-col justify-center items-center">
           <div className="flex flex-col gap-5">
@@ -29,12 +29,12 @@ const HeroSection = () => {
             </div>
 
             <div className="flex justify-center lg:justify-center gap-10">
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 text-center">
                 <span className="text-3xl fw-medium text-blue-primary">100+</span>
                 <span className="text-blue-primary">Passed Clients</span>
               </div>
 
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 text-center">
                 <span className="text-3xl fw-medium text-blue-primary">100+</span>
                 <span className="text-blue-primary">Passed Clients</span>
               </div>
