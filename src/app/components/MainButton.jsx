@@ -1,10 +1,10 @@
 import React from 'react'
 
-const MainButton = ({children}) => {
+const MainButton = ({children, href, className}) => {
   return (
-    <button className='bg-blue-primary px-10 py-3 rounded-full text-white'>
-        {children}
-    </button>
+    <a href={href} className={className + ' bg-blue-primary px-7 py-3 rounded-full text-white flex gap-3 items-center justify-center'}>
+      {children}
+    </a>
   )
 }
 

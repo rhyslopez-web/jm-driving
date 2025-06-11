@@ -2,36 +2,37 @@
 
 import React from 'react'
 import Slider from 'react-infinite-logo-slider'
-import SecondaryHeading from './SecondaryHeading'
+import SliderText from './SliderText'
+
 
 const LogoSlider = () => {
   return (
     <>
-      <div className='h-40 bg-blue-primary w-full lg:flex hidden items-center overflow-hidden'>
+      <div className='h-30 bg-blue-primary w-full lg:flex hidden items-center overflow-hidden'>
         <Slider
-        width="1000px"
+        width="600px"
         duration={40}
         pauseOnHover={true}
         blurBorders={false}
         blurBorderColor={'#fff'}
         >
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
         </Slider>
       </div>
@@ -46,22 +47,22 @@ const LogoSlider = () => {
         blurBorderColor={'#fff'}
         >
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SecondaryHeading className={'text-white'}>Driving Lessons that Stick</SecondaryHeading>
+            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
         </Slider>
       </div>

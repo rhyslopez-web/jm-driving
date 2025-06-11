@@ -41,16 +41,16 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className='w-full h-full absolute top-0 right-0 -z-1 blur-xs'>
-            {/* <AnimatedGridBG
+          <div className='w-full h-full absolute top-0 right-0 -z-1'>
+            <AnimatedGridBG
             speed={0.2} 
             squareSize={40}
             direction='diagonal' // up, down, left, right, diagonal
             borderColor='#f1f1f1'
             hoverFillColor='#222'
-            /> */}
+            />
 
-            <Hyperspeed/>
+            {/* <Hyperspeed/> */}
           </div>
         </div>
 

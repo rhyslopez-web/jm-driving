@@ -3,12 +3,13 @@ import MainHeading from './MainHeading'
 import Paragraph from './Paragraph'
 import { Check } from 'lucide-react'
 import MainButton from './MainButton'
+import { Phone } from 'lucide-react'
 
 const ServicesRow = ({title, price, long_description, perks, image, index}) => {
   return (
     
-    <div className='grid grid-cols-1 lg:grid-cols-2'>
-        <div className='flex flex-col gap-10 justify-center lg:px-20'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-10 px-5'>
+        <div className='flex flex-col gap-10 justify-center'>
             <MainHeading>{title}</MainHeading>
             <Paragraph>{long_description}</Paragraph>
             <span>{price}</span>
@@ -22,12 +23,16 @@ const ServicesRow = ({title, price, long_description, perks, image, index}) => {
                 ))}
             </div>
 
-            <MainButton>Inquire Now</MainButton>
+            <MainButton>
+                <Phone color='#fff' />
+
+                Inquire Now
+            </MainButton>
 
         </div>
 
-        <div className={`${index % 2 === 0 ? '' : 'lg:order-first'} `}>
-            <img className={`${index % 2 === 0 ? 'rounded-l-5xl' : 'rounded-r-5xl'}` + ' w-full aspect-square border border-blue-primary'} src={image} alt="" />
+        <div className={`${index % 2 === 0 ? '' : 'lg:order-first'}` + ' p-5 border border-blue-primary rounded-4xl'}>
+            <img className='rounded-3xl' src={image} alt="" />
         </div>
     </div>
     

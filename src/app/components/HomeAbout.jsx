@@ -8,7 +8,7 @@ import { motion } from "motion/react"
 const HomeAbout = () => {
   return (
     <div className='flex flex-col items-center justify-center pt-50 gap-20'>
-        <div className='flex flex-col gap-10 items-center container px-5 lg:px-0'>
+        <div className='flex flex-col gap-10 items-center max-w-7xl px-5'>
             <div className='lg:text-center w-full'>
                 <MainHeading>Helping Drivers Hit the Road with Confidence</MainHeading>
             </div>

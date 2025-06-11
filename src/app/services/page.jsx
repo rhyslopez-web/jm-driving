@@ -6,7 +6,7 @@ import ServicesRow from '../components/ServicesRow'
 const page = () => {
   return (
     <>
-        <div className='flex flex-col py-20'>            
+        <div className='flex flex-col justify-center items-center py-20 gap-20'>            
             {services.map((service, index) => (
                 <ServicesRow
                 key={index} 

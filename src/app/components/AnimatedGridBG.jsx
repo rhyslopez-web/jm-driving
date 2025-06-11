@@ -5,9 +5,9 @@ import { useRef, useEffect } from "react";
 const AnimatedGridBG = ({
   direction = "right",
   speed = 1,
-  borderColor = "#999",
-  squareSize = 40,
-  hoverFillColor = "#222",
+  borderColor = "#5A5CF3",
+  squareSize = 60,
+  hoverFillColor = "#22 2",
 }) => {
   const canvasRef = useRef(null);
   const requestRef = useRef(null);

@@ -7,8 +7,8 @@ import ReviewCard from './ReviewCard'
 
 const HomeReviews = () => {
   return (
-    <div className='bg-blue-primary flex justify-center py-40 px-5 lg:px-0'>
-        <div className='container flex flex-col gap-20'>
+    <div className='bg-blue-primary flex justify-center py-40 px-5'>
+        <div className='max-w-7xl flex flex-col gap-20'>
             <div className='flex flex-col gap-10 lg:flex-row justify-between'>
                 <div className='lg:w-1/2'>
                     <MainHeading className={"text-white"}>Words From my Students</MainHeading>

@@ -8,7 +8,7 @@ import ServiceCard from './ServiceCard'
 const HomeServicesRow = () => {
   return (
     <div className='border flex justify-center'>
-        <div className='py-40 flex flex-col justify-center container gap-20 px-5 lg:px-0'>
+        <div className='py-40 flex flex-col justify-center gap-20 max-w-7xl px-5'>
             <div className='flex flex-col gap-10 lg:flex-row justify-between'>
                 <div className='lg:w-1/2'>
                     <MainHeading>MY SERVICES</MainHeading>
