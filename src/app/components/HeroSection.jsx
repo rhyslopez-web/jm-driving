@@ -24,8 +24,8 @@ const HeroSection = () => {
             </div>
 
             <div className="w-full flex flex-col lg:flex-row gap-5 lg:justify-center">
-              <MainButton>Book A Lesson Now</MainButton>
-              <SecondaryButton>Learn More</SecondaryButton>
+              <MainButton href='/services'>Book A Lesson Now</MainButton>
+              <SecondaryButton href='/about'>Learn More</SecondaryButton>
             </div>
 
             <div className="flex justify-center lg:justify-center gap-10">

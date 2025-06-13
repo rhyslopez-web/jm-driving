@@ -2,6 +2,7 @@ import React from 'react'
 import MainButton from './MainButton'
 import Paragraph from './Paragraph'
 import SecondaryHeading from './SecondaryHeading'
+import { ArrowUpRight } from 'lucide-react'
 
 const ServiceCard = ({title, description, image}) => {
   return (
@@ -13,7 +14,7 @@ const ServiceCard = ({title, description, image}) => {
             <Paragraph>{description}</Paragraph>
         </div>
         
-        <MainButton>Learn More</MainButton>
+        <MainButton href='/services'><ArrowUpRight/> Learn More</MainButton>
     </div>
   )
 }

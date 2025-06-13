@@ -15,7 +15,7 @@ const HomeGallery = () => {
                 </div>
 
                 <div className=''>
-                    <SecondaryButton>Follow Our Socials</SecondaryButton>
+                    <SecondaryButton href='https://www.facebook.com/jm.driving.school.ltd'>Follow Our Socials</SecondaryButton>
                 </div>
             </div>
 

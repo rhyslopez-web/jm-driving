@@ -1,5 +1,6 @@
 const services = [
     {
+        id: 1,
         title: "Class 7",
         description: "Preparing for your Class 7 road test? These lessons focus on real world scenarios, defensive driving, and mastering the skills needed to pass and drive independently.",
         image: 'class7.jpg',
@@ -8,6 +9,7 @@ const services = [
         perks: ['5 minutes of planning', '50 minutes of in car instruction', '5 minutes of summary']
     },
     {
+        id: 2,
         title: "Class 5",
         description: "Ready for full licensing? Class 5 lessons are ideal for experienced drivers looking to refine their skills and meet all requirements for a full BC driver’s license.",
         image: "class5.jpg",
@@ -16,12 +18,22 @@ const services = [
         perks: ['5 minutes of planning', '50 minutes of in car instruction', '5 minutes of summary']
     },
     {
+        id: 3,
+        title: '10 Package (Class 5 or 7)',
+        description: '',
+        image:'/',
+        long_description: 'A great option for consistent progress, this 10-lesson package helps learners build strong driving habits and prepare for their road test through structured, in-depth training.',
+        price: '$945 total for 10 lessons (1.5 hrs each, GST included)',
+        perks: ['5 minutes of assessment before and after each lesson']
+    },
+    {
+        id: 4,
         title: "Car Rental",
         description: "Need a reliable car for your road test? Rent a clean, test ready vehicle with insurance included perfect for stress free exam day.",
         image: "carrental.jpg",
         long_description: 'Don’t have a car for your test? Rent one of ours! Choose between just the vehicle or a vehicle plus a warm-up session to get comfortable before the exam.',
-        price: '',
-        perks: []
+        price: '$115/hr or $173 (GST included)',
+        perks: ['Car + 45 mins of pre-road test driving.','Car rental only']
 
     },
 ]

@@ -16,7 +16,7 @@ const HomeReviews = () => {
                 </div>
 
                 <div className=''>
-                    <SecondaryButton className={'border-white text-white'}>View All Services</SecondaryButton>
+                    <SecondaryButton href='https://maps.app.goo.gl/LaNdrVAzPNDZc5fu6' className={'border-white text-white'}>Write a Review</SecondaryButton>
                 </div>
             </div>
 

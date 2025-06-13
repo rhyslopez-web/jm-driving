@@ -8,11 +8,11 @@ import { Phone } from 'lucide-react'
 const ServicesRow = ({title, price, long_description, perks, image, index}) => {
   return (
     
-    <div className='grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-10 px-5'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-10 px-5 lg:px-0'>
         <div className='flex flex-col gap-10 justify-center'>
             <MainHeading>{title}</MainHeading>
             <Paragraph>{long_description}</Paragraph>
-            <span>{price}</span>
+            <span className='text-blue-primary font-bold'>{price}</span>
             
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 {perks.map((perk, index) => (

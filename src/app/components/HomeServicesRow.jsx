@@ -16,12 +16,14 @@ const HomeServicesRow = () => {
                 </div>
 
                 <div className=''>
-                    <SecondaryButton>View All Services</SecondaryButton>
+                    <SecondaryButton href='/services'>View All Services</SecondaryButton>
                 </div>
             </div>
 
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
-                {services.map((service, index)=> (
+                {services
+                .filter(service => service.id !== 3)
+                .map((service, index)=> (
                     <ServiceCard key={index} title={service.title} description={service.description} image={service.image}/>
                 ))}
             </div>
