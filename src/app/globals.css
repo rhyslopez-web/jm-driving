@@ -3,10 +3,7 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../../.flowbite-react/class-list.json";
 
-@font-face {
-  font-family: nikea ;
-  src: url(./fonts/nikea.otf);
-}
+
 
 :root {
   --background: #fefefe;
@@ -22,7 +19,7 @@
   --font-mono: var(--font-geist-mono);
   --color-blue-primary: var(--primary-blue);
   --color-white-primary: var(--primary-white);
-  --font-primary: nikea;
+  --font-primary: "Poppins", sans-serif;
   --radius-5xl: 10rem;
 }
 
