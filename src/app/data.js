@@ -1,3 +1,6 @@
+
+
+
 const services = [
     {
         id: 1,
@@ -81,6 +84,32 @@ export const gallery = [
         image:"gallery 6.jpg"
     },
 ]
+
+
+export const whyus = [
+    {
+        title: "Patient and Friendly Instruction",
+        description: "We create a calm, supportive environment so you can learn at your own pace without feeling rushed or overwhelmed.",
+        icon: "/CarbonCalendar.svg" // you can replace this with your actual icon component or class
+    },
+    {
+        title: "Flexible Scheduling",
+        description: "We offer lesson times that fit your busy schedule, making it easier to balance learning with your daily life.",
+        icon: '/CarbonFaceSatisfied.svg'
+    },
+    {
+        title: "Clear Lesson Plans",
+        description: "Every lesson has a clear structure, so you always know what you’re learning and what to focus on next.",
+        icon: '/CarbonPartnership.svg'
+    },
+    {
+        title: "Road Test Preparation",
+        description: "We’ll make sure you feel fully prepared and confident for your road test with targeted practice and helpful tips.",
+        icon: '/CarbonCar.svg'
+    }
+];
+      
+
 
 
 

@@ -25,7 +25,7 @@ const FAQ = () => {
                 <Accordion className='flex flex-col gap-5 border-0'>
                     <AccordionPanel className=''>
                         <AccordionTitle  className='bg-white !hover:bg-white rounded-lg !text-blue-primary font-primary'>How do I pay for lessons?</AccordionTitle>
-                        <AccordionContent>
+                        <AccordionContent className=''>
                             <Paragraph></Paragraph>
                         </AccordionContent>
                     </AccordionPanel>

@@ -8,7 +8,7 @@ import { Phone } from 'lucide-react'
 const ServicesRow = ({title, price, long_description, perks, image, index}) => {
   return (
     
-    <div className='grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-10 px-5 lg:px-0'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 max-w-7xl gap-10 p-10 rounded-3xl bg-[#F4F5FE]'>
         <div className='flex flex-col gap-10 justify-center'>
             <MainHeading>{title}</MainHeading>
             <Paragraph>{long_description}</Paragraph>
