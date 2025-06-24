@@ -13,7 +13,7 @@ export default function page() {
   return (
     <div className='flex flex-col items-center lg:px-0'>
         {/* First Section */}
-        <div className='max-w-7xl px-5 lg:px-0 my-40'>
+        <div className='max-w-7xl px-5 lg:px-0 my-20'>
           <div className='grid grid-cols-1 lg:grid-cols-2 bg-[#F4F5FE] p-10 rounded-4xl gap-10'>
             <div className='flex flex-col gap-10'>
               <div className='flex flex-col gap-5'>
@@ -25,7 +25,7 @@ export default function page() {
                 </Paragraph>
               </div>
 
-              <div className='flex gap-3'>
+              <div className='flex flex-col gap-3'>
                 <MainButton>Book A Lesson Now</MainButton>
                 <SecondaryButton>View Pricing</SecondaryButton>
               </div>
