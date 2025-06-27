@@ -37,7 +37,7 @@ export default function page() {
 
         {/* Second Section */}
         <div className='w-full bg-blue-primary flex justify-center'>
-          <div className='max-w-7xl px-5 grid grid-cols-1 lg:grid-cols-2 py-40 gap-10'>
+          <div className='max-w-7xl px-5 grid grid-cols-1 lg:grid-cols-2 py-20 lg:py-40 gap-10'>
             <MainHeading className={'text-white-primary'}>Lorem Ipsum</MainHeading>
 
             <Paragraph className={'text-white-primary'}>
@@ -47,7 +47,7 @@ export default function page() {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className='flex flex-col max-w-7xl px-5 py-40 gap-10 items-center'>
+        <div className='flex flex-col max-w-7xl px-5 py-20 lg:py-40 gap-10 items-center'>
           <MainHeading>Why Choose Us</MainHeading>
 
           <div className='grid grid-cols-2 lg:grid-cols-4 gap-5'>

@@ -18,10 +18,10 @@ export default function Home() {
       <HomeAbout/>
       <LogoSlider/>
 
-      <div className='flex flex-col max-w-7xl mx-auto px-5 py-40 gap-10 items-center'>
+      <div className='flex flex-col max-w-7xl mx-auto px-5 py-20 lg:py-40 gap-10 items-center'>
         <MainHeading>Why Choose Us</MainHeading>
 
-        <div className='grid grid-cols-2 lg:grid-cols-4 gap-5'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
         {whyus.map((why, index) => (
         <BentoCardWithIcon key={index} title={why.title} description={why.description} index={index} icon={why.icon} />
         ))}
