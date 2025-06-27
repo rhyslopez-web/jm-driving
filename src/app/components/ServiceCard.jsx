@@ -1,12 +1,19 @@
+'use client'
+
 import React from 'react'
 import MainButton from './MainButton'
 import Paragraph from './Paragraph'
 import SecondaryHeading from './SecondaryHeading'
 import { ArrowUpRight } from 'lucide-react'
+import { motion } from "motion/react"
 
 const ServiceCard = ({title, description, image}) => {
   return (
-    <div className='border border-blue-primary p-5 rounded-4xl flex flex-col justify-between gap-10'>
+    <motion.div 
+    className='border border-blue-primary p-5 rounded-4xl flex flex-col justify-between gap-10'
+    whileHover={{scale: 1.05}}
+    transition={{type: 'easeinout'}}
+    >
         <img className='aspect-square rounded-2xl' src={image} ></img>
 
         <div className='flex flex-col gap-5'>
@@ -15,7 +22,7 @@ const ServiceCard = ({title, description, image}) => {
         </div>
         
         <MainButton href='/services'><ArrowUpRight/> Learn More</MainButton>
-    </div>
+    </motion.div>
   )
 }
 

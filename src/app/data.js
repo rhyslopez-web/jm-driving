@@ -132,6 +132,24 @@ export const questions = [
   }
 ];
 
+export const contact = [
+    {
+        title: 'Phone',
+        contact: '(778) 980-0645',
+        icon:'/CarbonPhone.svg'
+    },
+    {
+        title: 'E-mail',
+        contact: 'jmdriving@gmail.com',
+        icon: '/CarbonEmail.svg'
+    },
+    {
+        title: 'Messenger',
+        contact: '@jm.driving.school.ltd',
+        icon: '/CarbonLogoFacebook.svg'
+    }
+]
+
       
 
 
