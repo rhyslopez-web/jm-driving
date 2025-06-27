@@ -108,6 +108,30 @@ export const whyus = [
         icon: '/CarbonCar.svg'
     }
 ];
+
+export const questions = [
+  {
+    question: "What do I need to bring to my lesson?",
+    answer: "You must bring your valid driver’s license (L, N, or approved international). Without it, we won’t be able to begin your lesson."
+  },
+  {
+    question: "How do I pay for lessons?",
+    answer: "We accept cash or debit only. For the 10-lesson package, 50% is due on the first lesson and the rest by the 5th lesson."
+  },
+  {
+    question: "Can someone else ride along during the lesson?",
+    answer: "Only the student and instructor are allowed in the vehicle, unless agreed upon by both parties ahead of time."
+  },
+  {
+    question: "What happens if I forget my license or run late?",
+    answer: "If you need to pick up your license during your lesson time, that time will be deducted from the lesson. Please be on time and prepared."
+  },
+  {
+    question: "Do you offer refunds?",
+    answer: "We offer refunds on unused package lessons only if you cancel within 48 hours of notifying us. Unfortunately, we can’t refund lessons that have already taken place."
+  }
+];
+
       
 
 

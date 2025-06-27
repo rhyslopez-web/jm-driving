@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 const ServiceCard = ({title, description, image}) => {
   return (
-    <div className='border border-dashed border-blue-primary p-5 rounded-4xl flex flex-col justify-between gap-10'>
+    <div className='border border-blue-primary p-5 rounded-4xl flex flex-col justify-between gap-10'>
         <img className='aspect-square rounded-2xl' src={image} ></img>
 
         <div className='flex flex-col gap-5'>

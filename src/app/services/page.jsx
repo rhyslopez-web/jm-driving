@@ -9,7 +9,7 @@ const page = () => {
   return (
     <>
         <div className='flex flex-col justify-center items-center'>
-          <div className='flex flex-col gap-20 py-20'>            
+          <div className='flex flex-col gap-20 py-20 px-5'>            
             {services.map((service, index) => (
                 <ServicesRow
                 key={index} 

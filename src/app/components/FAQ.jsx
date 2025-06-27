@@ -3,6 +3,7 @@ import MainHeading from './MainHeading'
 import Paragraph from './Paragraph'
 import { Accordion, AccordionPanel, AccordionTitle, AccordionContent } from 'flowbite-react'
 import SecondaryButton from './SecondaryButton'
+import { questions } from '../data'
 
 const FAQ = () => {
   return (
@@ -23,33 +24,16 @@ const FAQ = () => {
 
             <div>
                 <Accordion className='flex flex-col gap-5 border-0'>
-                    <AccordionPanel className=''>
-                        <AccordionTitle  className='bg-white !hover:bg-white rounded-lg !text-blue-primary font-primary'>How do I pay for lessons?</AccordionTitle>
-                        <AccordionContent className=''>
-                            <Paragraph></Paragraph>
-                        </AccordionContent>
-                    </AccordionPanel>
-
-                    <AccordionPanel className=''>
-                        <AccordionTitle  className='bg-white !hover:bg-white rounded-lg !text-blue-primary font-primary'>Do you offer refunds?</AccordionTitle>
-                        <AccordionContent>
-                            <Paragraph></Paragraph>
-                        </AccordionContent>
-                    </AccordionPanel>
-
-                    <AccordionPanel className=''>
-                        <AccordionTitle  className='bg-white !hover:bg-white rounded-lg !text-blue-primary font-primary'>Can someone else ride along during the lesson?</AccordionTitle>
-                        <AccordionContent>
-                            <Paragraph></Paragraph>
-                        </AccordionContent>
-                    </AccordionPanel>
-
-                    <AccordionPanel className=''>
-                        <AccordionTitle  className='bg-white !hover:bg-white rounded-lg !text-blue-primary font-primary'>What do I need to bring to my lesson?</AccordionTitle>
-                        <AccordionContent>
-                            <Paragraph></Paragraph>
-                        </AccordionContent>
-                    </AccordionPanel>
+                    {
+                    questions.map((question, index) => (
+                        <AccordionPanel key={index} className=''>
+                            <AccordionTitle  className='bg-white rounded-lg !text-blue-primary font-primary'>{question.question}</AccordionTitle>
+                            <AccordionContent className='rounded-lg !bg-white-primary'>
+                                <Paragraph>{question.answer}</Paragraph>
+                            </AccordionContent>
+                        </AccordionPanel>
+                    ))
+                    }
                 </Accordion>
             </div>
         </div>

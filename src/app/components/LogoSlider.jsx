@@ -17,22 +17,10 @@ const LogoSlider = () => {
         blurBorderColor={'#fff'}
         >
           <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
+            <SliderText className={'text-white text-4xl'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
           <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
-          </Slider.Slide>
-          <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
-          </Slider.Slide>
-          <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
-          </Slider.Slide>
-          <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
-          </Slider.Slide>
-          <Slider.Slide>
-            <SliderText className={'text-white'}>Driving Lessons that Stick</SliderText>
+            <SliderText className={'text-white text-4xl'}>Driving Lessons that Stick</SliderText>
           </Slider.Slide>
         </Slider>
       </div>

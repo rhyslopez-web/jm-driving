@@ -23,7 +23,7 @@ const ServicesRow = ({title, price, long_description, perks, image, index}) => {
                 ))}
             </div>
 
-            <MainButton>
+            <MainButton href={'/contact'}>
                 <Phone color='#fff' />
 
                 Inquire Now
@@ -31,10 +31,13 @@ const ServicesRow = ({title, price, long_description, perks, image, index}) => {
 
         </div>
 
-        <div className={`${index % 2 === 0 ? '' : 'lg:order-first'}` + ' p-5 border border-blue-primary rounded-4xl'}>
-            <img className='rounded-3xl' src={image} alt="" />
+        <div
+        className={`order-first ${index % 2 === 0 ? 'lg:order-last' : 'lg:order-first'}  rounded-4xl`}
+        >
+            <img className="rounded-3xl" src={image} alt="" />
         </div>
-    </div>
+
+        </div>
     
   )
 }
