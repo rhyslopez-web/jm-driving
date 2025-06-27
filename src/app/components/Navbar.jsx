@@ -61,7 +61,7 @@ return (
                         <li><Link href="/services" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Services</Link></li>
                         <li><Link href="/about" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">About</Link></li>
                         <li><Link href="/policies" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Policies</Link></li>
-                        <li><Link href="/policies" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Contact</Link></li>
+                        <li><Link href="/contact" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Contact</Link></li>
                     </ul>
                 </div>
             </RemoveScroll>       
