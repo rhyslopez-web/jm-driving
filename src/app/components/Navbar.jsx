@@ -16,12 +16,12 @@ const handleIsOpen = () => {
 }
 
 return (    
-    <nav className="bg-blue-primary w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 relative">
-    <div className="max-w-screen-xl relative flex items-center justify-between mx-auto p-4">
+    <nav className="bg-blue-primary w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 sticky">
+    <div className="max-w-screen-7xl relative flex items-center justify-between mx-auto p-7">
         
         {/* Left - Logo */}
         <a href="/" className="flex items-center space-x-3 z-10">
-        <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span>
+        <img src='Logo.svg' className='w-30 lg:w-50' />
         </a>
 
         {/* Center - Menu Links */}
