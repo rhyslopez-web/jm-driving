@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import MainButton from './MainButton'
 import { Hamburger, Menu, Phone, X } from 'lucide-react'
 import { RemoveScroll } from 'react-remove-scroll'
+import { AnimatePresence, motion } from "motion/react"
 
 
 const Navbar = () => {
@@ -36,10 +37,10 @@ return (
 
         {/* Right - Button */}
         <div className="items-center space-x-3 z-10">
-            <button className='bg-white px-7 py-3 rounded-full text-blue-primary gap-3 items-center justify-center shadow-lg hidden md:flex'>
+            <a href="tel:+1-778-980-0645" className='bg-white px-7 py-3 rounded-full text-blue-primary gap-3 items-center justify-center shadow-lg hidden md:flex'>
                 <Phone color='#5A5CF3' />
                 (778) 980-0645
-            </button>
+            </a>
 
             <div onClick={handleIsOpen} className='flex lg:hidden'>
                 {
@@ -54,20 +55,34 @@ return (
     </div>
 
         {/* Mobile Menu */}
-        {isOpen 
-        ?   <RemoveScroll>
-                <div className='fixed top-0 h-screen bg-blue-primary w-full flex justify-center items-center'>
-                    <ul className=" flex flex-col gap-5 text-white-primary">
-                        <li><Link href="/services" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Services</Link></li>
-                        <li><Link href="/about" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">About</Link></li>
-                        <li><Link href="/policies" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Policies</Link></li>
-                        <li><Link href="/contact" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Contact</Link></li>
-                    </ul>
-                </div>
-            </RemoveScroll>       
-        :
-            <></>
-        }
+        <AnimatePresence>
+            {
+                isOpen && (
+                    <RemoveScroll>
+                    <motion.div 
+                    initial={{x: 500}}
+                    animate={{x: 0}}
+                    exit={{x:500}}
+                    transition={{duration: 0.3, type: 'easeinout'}}
+                    className='fixed top-0 h-screen bg-blue-primary w-full flex justify-center items-center'
+                    >
+                        <ul className=" flex flex-col gap-5 text-white-primary">
+                            <li><Link href="/services" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Services</Link></li>
+                            <li><Link href="/about" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">About</Link></li>
+                            <li><Link href="/policies" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Policies</Link></li>
+                            <li><Link href="/contact" onClick={handleIsOpen} className="text-white-primary hover:text-blue-200 text-5xl font-semibold transition ease-in-out duration-200">Contact</Link></li>
+                            <li className=''>
+                                <a href="tel:+1-778-980-0645" className='bg-white-primary flex text-blue-primary justify-center gap-3 px-7 py-3 rounded-full'>
+                                    <Phone color='#5A5CF3' />
+                                    (778) 980-0645
+                                </a>
+                            </li>
+                        </ul>
+                    </motion.div>
+                    </RemoveScroll>     
+                )
+            }
+        </AnimatePresence>
     </nav>
 
 )
